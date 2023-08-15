@@ -1,6 +1,6 @@
+const {Costumer,validate} = require('../models/customer');
 const express = require('express');
 const router = express.Router();
-const {Costumer,validate} = require('../models/costumer')
 
 router.get('/', async (req, res) => {
   const costumers = await Costumer.find().sort({name:1});
