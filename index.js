@@ -4,6 +4,7 @@ const genres = require('./routes/genres');
 const rentals = require('./routes/rentals');
 const costumers = require('./routes/costumers');
 const movies = require('./routes/movies');
+const users = require('./routes/users');
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -17,6 +18,7 @@ app.use('/api/rentals', rentals);
 app.use('/api/genres', genres);
 app.use('/api/costumers', costumers);
 app.use('/api/movies', movies);
+app.use('/api/users', users);
 
 
 
