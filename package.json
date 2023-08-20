@@ -2,9 +2,16 @@
   "name": "vidly",
   "version": "1.0.0",
   "description": "",
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "devDependencies": {
+    "jest": "^22.2.2"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +28,7 @@
     "jsonwebtoken": "^9.0.1",
     "lodash": "^4.17.21",
     "mongoose": "^7.4.3",
+    "text-encoding": "^0.7.0",
     "winston": "^2.4.0",
     "winston-mongodb": "^3.0.2"
   }
