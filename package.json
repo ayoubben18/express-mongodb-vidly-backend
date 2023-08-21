@@ -7,11 +7,12 @@
     "testURL": "http://localhost/"
   },
   "devDependencies": {
-    "jest": "^22.2.2"
+    "jest": "^22.2.2",
+    "supertest": "^3.0.0"
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1"
+    "test": "jest --verbose  --watchAll"
   },
   "keywords": [],
   "author": "",
