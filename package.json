@@ -12,7 +12,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1"
+    "test": "jest --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1",
+    "start":"node index.js"
+  },
+  "engines": {
+    "node": "18.16.1"
   },
   "keywords": [],
   "author": "",
