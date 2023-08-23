@@ -12,7 +12,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose  --watchAll"
+    "test": "jest --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1"
   },
   "keywords": [],
   "author": "",
@@ -20,14 +20,17 @@
   "dependencies": {
     "7": "^0.0.1",
     "bcrypt": "^5.1.0",
+    "compression": "^1.7.4",
     "config": "^3.3.9",
     "express": "^4.16.2",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "helmet": "^7.0.0",
     "joi": "^7.3.0",
     "joi-objectid": "^4.0.2",
     "jsonwebtoken": "^9.0.1",
     "lodash": "^4.17.21",
+    "moment": "^2.20.1",
     "mongoose": "^7.4.3",
     "text-encoding": "^0.7.0",
     "winston": "^2.4.0",

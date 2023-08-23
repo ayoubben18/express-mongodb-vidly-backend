@@ -1,16 +1,16 @@
 const request = require('supertest');
 const {Genre} = require('../../models/genre');
-let server;
 const {User} = require('../../models/user');
-const jwt = require('jsonwebtoken');
-const config = require('config');
+
 
 describe('/api/genres', ()=>{
+    let server;
+
     beforeEach(()=>{
         server = require('../../index');
     })
     afterEach(async ()=>{
-        server.close();
+        await server.close();
         await Genre.deleteMany();
     })
 

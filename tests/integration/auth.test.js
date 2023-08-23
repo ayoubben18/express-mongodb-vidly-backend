@@ -5,13 +5,14 @@ const { Genre } = require('../../models/genre');
 
 
 describe('auth middlware',()=>{
+    let server;
 
     beforeEach(()=>{
         server = require('../../index');
     })
     afterEach(async ()=>{  
         await Genre.deleteMany();
-        server.close(); 
+        await server.close(); 
     });
 
     let token;
